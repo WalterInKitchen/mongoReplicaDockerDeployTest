@@ -35,10 +35,10 @@ docker-compose up
 mongo "mongodb://root:123456@127.0.0.1:17018,127.0.0.1:17017/?authSource=admin&replicaSet=rs0&readPreference=primary"
 ```
 
-![image-20210201114246053](D:\Project\Tools\mongoReplica\img\winConnected)
+![image-20210201114246053](./img/winConnected)
 
 #### 通过MongoDB Compass连接
 
-![image-20210201114125325](D:\Project\Tools\mongoReplica\img\mongoDbCompass)
+![image-20210201114125325](./img/mongoDbCompass)
 
-![image-20210201114356115](D:\Project\Tools\mongoReplica\img\mongoDbCompassConnected)
+![image-20210201114356115](./img/mongoDbCompassConnected)
