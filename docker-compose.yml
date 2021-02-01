@@ -23,8 +23,8 @@ services:
     environment:
       # 以下的HOST可以是ip:port，也可以是hostName:port;为后者时必须保证你域名能够正常解析(spring boot连接副本集时会拿到这里提供的副本集主机名,你要保证spring boot能够解析出来)
       # 本地部署将以下ip地址改为本机在交换机下的ip;
-      MONGO_DB_HOST_0: 192.168.1.115:17017
-      MONGO_DB_HOST_1: 192.168.1.115:17018
+      MONGO_DB_HOST_0: ${MONGO_HOST}:17017
+      MONGO_DB_HOST_1: ${MONGO_HOST}:17018
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_DB_USR}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_DB_PWD}
       MONGO_INITDB_DATABASE: ${MONGO_DB_DATABASE}
